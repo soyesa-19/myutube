@@ -101,6 +101,7 @@ const WatchPage = () => {
             {isToggle ? <></> : <div>
                 <LiveChatSeaction />
                 {relatedVideos?.map((video,index) => {
+                    console.log(video,"hi from watchpage")
                     return <Link to={'?v=' + video.id.videoId}  key={index}><RightSidebar video={video}/></Link>                     
                 })}
             </div>}
